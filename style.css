@@ -4,3 +4,22 @@
     box-sizing: border-box;
     font-family: arial;
 }
+body{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.678) , rgba(0, 0, 0, 0.527)) , url('kidreading.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prayer-form
+{
+    background-color:white;
+    width: 500px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    
+
+}
