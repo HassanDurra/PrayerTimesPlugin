@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayers Times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<center>Prayer times according to your address</center>
+<!-- Year -->
+<br><label for="">Select Year</label><br>
+<Select name="year">
+    <option value="">Select year</option>
+</Select>
+<!-- Months -->
+<br><label for="">Select Month</label><br>
+<select name="month" id="">
+    <option value="">Select Month</option>
+</select>
+<!-- Methods -->
+<br><label for="">Select Method</label><br>
+<select name="method" id="">
+    <option value="">Select School or Sector</option>
+    <option value="0">Shia Ithna-Ansari</option>
+    <option value="1">University of Islamic Sciences, Karachi</option>
+    <option value="2">Islamic Society of North America</option>
+    <option value="3">Muslim World League</option>
+    <option value="4">Umm Al-Qura University, Makkah</option>
+    <option value="5">Egyptian General Authority of Survey</option>
+    <option value="6">Institute of Geophysics, University of Tehran</option>
+    <option value="7">Gulf Region</option>
+    <option value="8">Kuwait</option>
+    <option value="9">Qatar</option>
+    <option value="10">Majlis Ugama Islam Singapura, Singapore</option>
+    <option value="11">Union Organization islamic de France</option>
+    <option value="12">Diyanet İşleri Başkanlığı, Turkey</option>
+    <option value="13">Spiritual Administration of Muslims of Russia</option>
+</select>
+<br><label for="">Country</label><br>
+<input type="text" name="country" placeholder="Enter your country">
+<br><label for="">Mosque name</label><br>
+<input type="text" name="mosque" placeholder="Enter your state">
+<br><label for="">City</label><br>
+<input type="text" name="city" placeholder="Enter your city">
+
+<button id="getTime">Show Prayer Time</button>
+<!--Showing results -->
+<div class="prayer_times" >
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Fajr</th>
+            <th>Zuhr</th>
+            <th>Asr</th>
+            <th>Maghrib</th>
+            <th>Isha</th>
+        </tr>
+        <tbody id="prayerContainer">
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+<script src="jquery.js"></script>
+<script src="Muslim-PrayerTime.js"></script>
