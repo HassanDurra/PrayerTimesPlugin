@@ -1,25 +1,90 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
 }
-body{
+
+body {
     min-height: 100vh;
     height: auto;
     width: 100%;
-    background:linear-gradient(rgba(0, 0, 0, 0.678) , rgba(0, 0, 0, 0.527)) , url('kidreading.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.527)), url('kidreading.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.prayer-form
-{
-    background-color:white;
-    width: 500px;
+
+center {
+    color: whitesmoke;
+    text-decoration: solid;
+    margin-top: 50px;
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+label {
+    color: whitesmoke;
+}
+
+.prayer-form {
+    background-color: transparent;
+    /* width: 350px; */
     margin: auto;
     display: block;
     padding: 20px;
-    
+    color: whitesmoke;
+    margin-left: 10px;
+    /* float: left; */
+}
 
+.prayer-form input,
+.inp {
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-color: white;
+    color: whitesmoke;
+}
+
+::placeholder {
+    /* Firefox */
+    color: whitesmoke;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: whitesmoke;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: whitesmoke;
+}
+
+/* BUTTON */
+#getTime {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+#getTime:hover {
+    background-color: rgb(124, 149, 155);
+    border-color: whitesmoke;
+}
+
+th {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+tbody td {
+    min-height: 500px;
+    overflow: auto;
+    color: whitesmoke;
 }
